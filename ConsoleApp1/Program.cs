@@ -11,7 +11,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            ParseNullStringToDecimal();
+            StringCompare();
+        }
+
+        public static void StringCompare()
+        {
+            var a = string.Equals(null, null, StringComparison.OrdinalIgnoreCase);
+            Console.WriteLine(a);
         }
 
         public static void CheckDefaultDateTime()
